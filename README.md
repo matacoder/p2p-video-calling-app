@@ -28,3 +28,7 @@ To run the example:
  Once the server is running, open [http://localhost:3000](http://localhost:3000) in 2 separate tabs in your favourite browser.
  
  Select ID of the user and click call.
+
+## Links
+
+- [Official site of WebRTC](https://webrtc.github.io/)
