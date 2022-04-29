@@ -2,33 +2,40 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css"/>
     <title>Video calling</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 <body>
-<div>
-    <div id="userId"></div>
-    <div class="remote-video">
-        <div>Call:</div>
-        <video id="remoteVideo" playsinline autoplay></video>
-    </div>
-    <div class="local-video">
-        <div>Me:</div>
-        <video id="localVideo" playsinline autoplay muted></video>
-    </div>
+<section class="section">
+    <div class="content">
 
-    <div>
-        Users:
-    </div>
-    <div id="usersList">
-        No users connected
-    </div>
+        <img src="webrtc.png">
+        <div id="userId"></div>
+        <div class="box">
+            <h2>Remote Camera:</h2>
+            <video id="remoteVideo" playsinline autoplay></video>
+        </div>
+        <div class="box">
+            <h2>My camera:</h2>
+            <video id="localVideo" playsinline autoplay muted></video>
+        </div>
 
-    <div>
-        <div id="call">Call</button>
-    </div>
-</div>
+        <div class="box">
+            <h2>Connected users:</h2>
 
+            <div id="usersList">
+                No users connected
+            </div>
+
+            <div>
+                <button id="call">Call</button>
+            </div>
+        </div>
+
+    </div>
+</section>
 <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
 <script src="index.js"></script>
 </body>

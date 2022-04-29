@@ -20,15 +20,15 @@
 }
 
 #localVideo {
-  width: 150px;
-  height: 150px;
+  width: 400px;
+  /*height: 150px;*/
 }
 
 .remote-video {}
 
 #remoteVideo {
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  /*height: 250px;*/
 }
 
 #userId {

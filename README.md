@@ -1,6 +1,6 @@
 # WebRTC Peer to Peer Video Calls
 
-<img src="https://github.com/matacoder/p2p-video-calling-app/raw/master/images/webrtc.png">
+<img src="https://github.com/matacoder/p2p-video-calling-app/raw/master/public/webrtc.png">
 
 Proof of concept for peer to peer calls using WebRTC technology.
 
