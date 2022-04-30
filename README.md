@@ -4,9 +4,9 @@
 
 Proof of concept for peer to peer calls using WebRTC technology.
 
-For now client and server side is implemented in JavaScript.
-
-Planning to rewrite server side with `FastAPI` python framework.
+There are two servers:
+- JavaScript (Node.JS Express)
+- Python (AIOHTTP)
 
 ## Environment
 
@@ -15,17 +15,19 @@ Please use your host in [line 11](public/index.css) instead of:
 
 ## Docker Compose installation
 
-Just run `docker compose up -d` to start video app, it would be available at [http://localhost:3000](http://localhost:3000)
+Just run `docker compose -f docker-compose-aiohttp.yaml up --build -d` to start video app, it would be available at [http://localhost:3000](http://localhost:3000)
 
 ## JavaScript installation
 
-To run the example:
+Just run `docker compose -f docker-compose-nodeis.yaml up --build -d` to start video app, it would be available at [http://localhost:3000](http://localhost:3000)
+
+To run the app without docker:
 
 `yarn && yarn dev`
  
  or if you use npm:
  
- `npm i && npm run dev`
+`npm i && npm run dev`
  
  Once the server is running, open [http://localhost:3000](http://localhost:3000) in 2 separate tabs in your favourite browser.
  
@@ -34,3 +36,4 @@ To run the example:
 ## Links
 
 - [Official site of WebRTC](https://webrtc.github.io/)
+- [AIOHTTP Socket.IO](https://python-socketio.readthedocs.io/en/latest/server.html#aiohttp)
