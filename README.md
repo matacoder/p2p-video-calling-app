@@ -19,7 +19,7 @@ Just run `docker compose -f docker-compose-aiohttp.yaml up --build -d` to start 
 
 ## JavaScript installation
 
-Just run `docker compose -f docker-compose-nodeis.yaml up --build -d` to start video app, it would be available at [http://localhost:3000](http://localhost:3000)
+Just run `docker compose -f docker-compose-nodejs.yaml up --build -d` to start video app, it would be available at [http://localhost:3000](http://localhost:3000)
 
 To run the app without docker:
 
