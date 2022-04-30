@@ -2,11 +2,9 @@ version: '3'
 
 services:
   video-chat:
-    build: .
+    build:
+      context: ./
+      dockerfile: ./aiohttp_server/Dockerfile
     ports:
       - "127.0.0.1:3000:3000"
-    environment:
-      - HOST="127.0.0.1:3000"
     restart: always
-    volumes:
-      - .:/usr/src/app
