@@ -4,16 +4,16 @@
 
 Proof of concept for peer to peer calls using WebRTC technology.
 
-There are two servers:
-- JavaScript (Node.JS Express)
-- Python (AIOHTTP)
+There are three servers:
+- JavaScript Node.JS Express
+- Python AIOHTTP
+- Python FastAPI
 
 ## Environment
 
-Please use your host in [line 11](public/index.css) instead of:
-`const socket = io('https://call.matakov.com');` or just `http://localhost:3000` to run locally. Plan to use here environment variable.
+FastAPI version requires custom `path` and it is set in `index.js` line 11. To use `aiohttp` of `node.js` servers just remove this `/ws` path.
 
-## Docker Compose installation
+## Python installation
 
 Just run `docker compose -f docker-compose-aiohttp.yaml up --build -d` to start video app, it would be available at [http://localhost:3000](http://localhost:3000)
 
@@ -22,6 +22,8 @@ Or `docker compose -f docker-compose-fastapi.yaml up --build -d` if you want to 
 ## JavaScript installation
 
 Just run `docker compose -f docker-compose-nodejs.yaml up --build -d` to start video app, it would be available at [http://localhost:3000](http://localhost:3000)
+
+## Local start
 
 To run the app without docker:
 
@@ -39,3 +41,4 @@ To run the app without docker:
 
 - [Official site of WebRTC](https://webrtc.github.io/)
 - [AIOHTTP Socket.IO](https://python-socketio.readthedocs.io/en/latest/server.html#aiohttp)
+- [FastAPI Socket.IO](https://github.com/pyropy/fastapi-socketio)
