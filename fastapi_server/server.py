@@ -12,7 +12,7 @@ socket_manager = SocketManager(app=app, mount_location="/ws")
 connected_users = []
 
 
-@app.sio.on('connect')
+@app.sio.on("connect")
 async def connect(sid, environ):
     """Handle initial connection of socket user."""
     connected_users.append(sid)
@@ -63,4 +63,4 @@ async def ice_candidate(sid, data):
 
 @app.get("/")
 def read_root():
-    return FileResponse('../public/index.html')
+    return FileResponse("../public/index.html")

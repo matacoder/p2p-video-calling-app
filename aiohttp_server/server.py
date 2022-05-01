@@ -2,7 +2,7 @@ from aiohttp import web
 import socketio
 from loguru import logger
 
-sio = socketio.AsyncServer(async_mode='aiohttp')
+sio = socketio.AsyncServer(async_mode="aiohttp")
 app = web.Application()
 sio.attach(app)
 

@@ -17,6 +17,8 @@ Please use your host in [line 11](public/index.css) instead of:
 
 Just run `docker compose -f docker-compose-aiohttp.yaml up --build -d` to start video app, it would be available at [http://localhost:3000](http://localhost:3000)
 
+Or `docker compose -f docker-compose-fastapi.yaml up --build -d` if you want to use FastAPI
+
 ## JavaScript installation
 
 Just run `docker compose -f docker-compose-nodejs.yaml up --build -d` to start video app, it would be available at [http://localhost:3000](http://localhost:3000)
