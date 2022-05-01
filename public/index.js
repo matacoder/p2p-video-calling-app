@@ -7,8 +7,8 @@ const peer = new RTCPeerConnection({
   ]
 });
 
-// Connecting to socket
-const socket = io('https://call.matakov.com');
+// Connecting to socket (custom path for FastAPI
+const socket = io({path: '/ws/socket.io'});
 
 const onSocketConnected = async () => {
   const constraints = {
